@@ -21,12 +21,6 @@ Sharing Services
 * Q&A
 * Realtime
 
-## Built-in Technology
-* Framework Development
-* Payment
-* Video Chat
-*
-
 ## The open source software for backend
 * [BaasBox](http://www.baasbox.com/en/)
 * [Loopback]
@@ -34,9 +28,9 @@ Sharing Services
 ### Good reads
 * [A Full List of the Best Frameworks for Building Android Apps](https://yalantis.com/blog/list-of-best-frameworks-for-android-app-development/)
 
-## Payment Technology
+## Payment Technology 3rd Party
 ### Tools
-* [Adyen]()
+* [Adyen](https://www.adyen.com/)
 * [Braintree](https://www.braintreepayments.com/)
 * [Stripe](https://stripe.com/)
 
@@ -45,4 +39,13 @@ Sharing Services
 * [adyen-vs-braintree](https://www.similartech.com/compare/adyen-vs-braintree)
 * [adyen-vs-stripe](https://www.similartech.com/compare/adyen-vs-stripe)
 
-## Calculating price range
+## Video Call 3rd Party
+### [Sinch](https://www.sinch.com/)
+
+![Model-intergrate-sinch-to-backend](https://download.sinch.com/docs/javascript/latest/user-guide/images/authentication_papi_partner.png)
+
+
+### [Quickblox]()
+### [Tokbox]()
+### Good reads
+
