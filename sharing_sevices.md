@@ -32,6 +32,19 @@ Sharing Services
 ### Tools
 * [Adyen](https://www.adyen.com/)
 * [Braintree](https://www.braintreepayments.com/)
+
+![Braintree payment framework](https://developers.braintreepayments.com/img/developers/diagram-client-perspective.png)
+
+__How Braintree Works__
+Braintree offers complementary client and server SDKs. They represent the Client-side Encryption solution that combines the best of Braintree’s traditional Server-to-Server (S2S) approach and the innovative Transparent Redirect (TR) solution. In a nutshell, the Braintree mechanism can be described as following:
+
+1. The application backend generates a client token using the Ruby SDK for the frontend that initializes the JavaScript SDK using that client token.
+2. The Braintree-provided JavaScript library encrypts sensitive data using the public key and communicates with Braintree before the form is ever posted to your server.
+3. Once the data reaches Braintree’s servers, it is decrypted using the keypair’s private key, then returns a payment method nonce to your client code. Your code relays this nonce to your server.
+4. Your server-side code provides the payment method nonce to the Ruby SDK to perform Braintree operations.
+ 
+
+
 * [Stripe](https://stripe.com/)
 
 ### Good reads
