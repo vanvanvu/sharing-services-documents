@@ -38,12 +38,14 @@ Sharing Services
 __How Braintree Works__
 Braintree offers complementary client and server SDKs. They represent the Client-side Encryption solution that combines the best of Braintree’s traditional Server-to-Server (S2S) approach and the innovative Transparent Redirect (TR) solution. In a nutshell, the Braintree mechanism can be described as following:
 
-1. The application backend generates a client token using the Ruby SDK for the frontend that initializes the JavaScript SDK using that client token.
-2. The Braintree-provided JavaScript library encrypts sensitive data using the public key and communicates with Braintree before the form is ever posted to your server.
-3. Once the data reaches Braintree’s servers, it is decrypted using the keypair’s private key, then returns a payment method nonce to your client code. Your code relays this nonce to your server.
-4. Your server-side code provides the payment method nonce to the Ruby SDK to perform Braintree operations.
- 
+1. Your app or web front-end requests a client token from your server in order to initialize the client SDK
+2. Your server generates and sends a client token back to your client with the server SDK
+3. Once the client SDK is initialized and the customer has submitted payment information, the SDK communicates that information to Braintree, which returns a payment method nonce
+4. You then send the payment nonce to your server
+5. Your server code receives the payment method nonce from your client and then uses the server SDK to create a transaction or perform other Braintree functions detailed in the guides
 
+__Tutorial__
+[Document](https://developers.braintreepayments.com/)
 
 * [Stripe](https://stripe.com/)
 
